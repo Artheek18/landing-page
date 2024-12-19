@@ -10,7 +10,7 @@ body {
 }
 
 .hero-one{
-    height: 65vh;
+    height: 45vh;
     background: #1F2937;
     padding: 16px 250px;
     display: flex;
@@ -49,9 +49,9 @@ a{
 .header-one-main{
     display: flex;
     justify-content: space-between;
-    height: 29vh;
+    height: 30vh;
     flex-direction: column;
-    width: 55%;
+    width: 100%;
 
 }
 
@@ -59,32 +59,46 @@ a{
     color: #f9faf8;
     font-size: 48px;
     font-weight: 900;
+    margin-right: 800px;
     
 }
-
-.text-container{
+.content-container {
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* Align items at the top */
+    justify-content: center; /* Center content horizontally */
+    gap: 20px; /* Space between text and image */
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column; /* Stack paragraph and button vertically */
+    align-items: flex-start; /* Align text and button to the left */
+    max-width: 50%; /* Limit the width of the text container */
 }
 
 .text-container p {
     font-size: 18px;
     color: #e5e7eb;
-    margin-right: 100px;
+    margin-bottom: 16px; /* Add spacing below the paragraph */
+    margin-right: 250px; 
 }
 
-#image{
-    width: 50%;
+#image {
+    width: 900px;
+    height: 250px;
     background-color: #606060;
     color: #fff;
+    display: flex;
     align-items: center;
     justify-content: center;
-    display: flex;
-    margin-left: 10px;
-
+    font-size: 18px;
+    text-align: center;
+    margin-left: 100px;
+    position: relative;
+    top: -100px;
 }
 
-.sign-up button{
+.sign-up button {
     background-color: #3882F6;
     color: #f9faf8;
     border-radius: 8px;
@@ -92,7 +106,4 @@ a{
     font-size: 18px;
     font-weight: 700;
     border: none;
-    margin-top: 10px;
-    align-self: flex-start;
-    
 }
